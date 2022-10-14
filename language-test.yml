@@ -7,4 +7,4 @@ jobs:
   - name: “Python language basic test”
     language: python
     script:
-      - ruby ./source/python_hello.py
+      - python ./source/python_hello.py

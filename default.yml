@@ -1,0 +1,3 @@
+import:
+- source: language_tests.yml
+- mode: deep_merge

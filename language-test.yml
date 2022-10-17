@@ -1,17 +1,17 @@
 jobs:
   include:
-  - name: “Ruby language basic test”
-    language: ruby
-    ruby:
-      - 3.0.4
-    script:
-      - ruby ./source/ruby_hello.rb
-  - name: “Python language basic test”
-    language: python
-    python:
-       - 3.8.13
-    script:
-      - python source/python_hello.py
+#   - name: “Ruby language basic test”
+#     language: ruby
+#     ruby:
+#       - 3.0.4
+#     script:
+#       - ruby ./source/ruby_hello.rb
+#   - name: “Python language basic test”
+#     language: python
+#     python:
+#        - 3.8.13
+#     script:
+#       - python source/python_hello.py
   - name: “Perl language basic test”
     language: perl
     perl:

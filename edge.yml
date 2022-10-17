@@ -1,3 +1,4 @@
+os: travisci/ci-stevonnie:packer-1664366497-67939b42
 dist: xenial
 group: edge
 import:

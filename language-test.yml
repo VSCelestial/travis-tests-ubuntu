@@ -18,4 +18,9 @@ jobs:
        - 5.34.1
     script:
       - perl ./source/python_hello.py
+  - name: “erlang language basic test”
+    language: erlang
+    script:
+      - echo "Erlang language installed !!"
+      - erlc hello_world.erl
 

@@ -1,0 +1,5 @@
+dist: xenial
+group: edge
+import:
+- source: language-test.yml
+- mode: deep_merge

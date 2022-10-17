@@ -1,5 +1,6 @@
 os: xenial
 group: edge
+language: __opal__
 import:
 - source: language-test.yml
 - mode: deep_merge

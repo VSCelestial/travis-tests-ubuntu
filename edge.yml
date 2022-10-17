@@ -1,5 +1,4 @@
-os: travisci/ci-stevonnie:packer-1664366497-67939b42
-dist: xenial
+os: xenial
 group: edge
 import:
 - source: language-test.yml

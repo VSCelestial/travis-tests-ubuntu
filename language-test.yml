@@ -21,7 +21,7 @@ jobs:
       - cd source
       - java HelloWorld
   - name: “Perl language basic test”
-    language: perl
+    language: perl6
 #     perl:
 #        - 5.34.1
 #     script:

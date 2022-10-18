@@ -5,7 +5,7 @@ before_install:
   - sudo apt-get install -qq unixodbc unixodbc-dev
 install:
 #   - perlbrew install 5.36
-    - cpanm --installdeps 
+    - cpanm --cpanfile check.cpanfile
 # language: __opal__
 import:
 - source: language-test.yml

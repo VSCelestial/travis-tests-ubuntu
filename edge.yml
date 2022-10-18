@@ -1,6 +1,6 @@
 os: linux
 dist: xenial
-group: edge
+group: stable
 # language: __opal__
 import:
 - source: language-test.yml

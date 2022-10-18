@@ -1,7 +1,7 @@
 os: linux
 dist: xenial
 group: edge
-language: __opal__
+language:  __stevonnie__
 import:
 - source: language-test.yml
 - mode: deep_merge

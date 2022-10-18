@@ -1,12 +1,6 @@
 os: linux
 dist: xenial
 group: edge
-virt: lxd
-before_install:
-  - sudo apt-get install -qq unixodbc unixodbc-dev
-install:
-#   - perlbrew install 5.36
-    - cpanm --quiet .
 language: __opal__
 import:
 - source: language-test.yml

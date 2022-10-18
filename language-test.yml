@@ -25,5 +25,6 @@ jobs:
     language: erlang
     script:
       - echo "Erlang language installed !!"
-      - erlc hello_world.erl
+      - which erl
+#       - erlc hello_world.erl
 

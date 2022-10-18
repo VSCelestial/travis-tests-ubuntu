@@ -18,14 +18,14 @@ jobs:
     language: java
     script:
       - javac ./source/HelloWorld.java
-      - java ./source/HelloWorld
+      - java HelloWorld
   - name: “Perl language basic test”
     language: perl
 #     perl:
 #        - 5.34.1
-    script:
-      - perl -v
-      - perl ./source/perl_hello.pl
+#     script:
+#       - perl -v
+#       - perl ./source/perl_hello.pl
   - name: “erlang language basic test”
     language: erlang
     script:

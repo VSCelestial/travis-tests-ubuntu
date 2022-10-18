@@ -18,6 +18,7 @@ jobs:
     language: java
     script:
       - javac ./source/HelloWorld.java
+      - cd source
       - java HelloWorld
   - name: “Perl language basic test”
     language: perl

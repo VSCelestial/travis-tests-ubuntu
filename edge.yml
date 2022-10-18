@@ -1,6 +1,6 @@
 os: linux
 dist: xenial
-group: stable
+group: edge
 # before_install:
 #   - sudo apt-get install -qq unixodbc unixodbc-dev
 # install:

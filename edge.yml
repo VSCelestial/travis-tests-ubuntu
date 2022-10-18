@@ -1,11 +1,11 @@
 os: linux
 dist: xenial
 group: stable
-before_install:
-  - sudo apt-get install -qq unixodbc unixodbc-dev
-install:
-#   - perlbrew install 5.36
-    - cpanm --cpanfile check.cpanfile
+# before_install:
+#   - sudo apt-get install -qq unixodbc unixodbc-dev
+# install:
+# #   - perlbrew install 5.36
+#     - cpanm --cpanfile check.cpanfile
 # language: __opal__
 import:
 - source: language-test.yml

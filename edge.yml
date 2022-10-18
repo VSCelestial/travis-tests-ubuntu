@@ -6,7 +6,7 @@ group: stable
 # install:
 # #   - perlbrew install 5.36
 #     - cpanm --cpanfile check.cpanfile
-# language: __opal__
+language: __opal__
 import:
 - source: language-test.yml
 - mode: deep_merge

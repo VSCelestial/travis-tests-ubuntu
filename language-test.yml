@@ -29,6 +29,9 @@ jobs:
 #       - perl ./source/perl_hello.pl
   - name: “erlang language basic test”
     language: erlang
+    otp_release:
+        - "23.0.2"
+        - "22.3.4"
     script:
       - echo "Erlang language installed !!"
       - which erl

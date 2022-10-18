@@ -17,7 +17,7 @@ jobs:
   - name: “Java language basic test”
     language: java
     script:
-      - javac ./source/hello_world.java
+      - javac ./source/HelloWorld.java
       - java ./source/HelloWorld
   - name: “Perl language basic test”
     language: perl

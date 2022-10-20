@@ -20,6 +20,20 @@ jobs:
       - javac ./source/HelloWorld.java
       - cd source
       - java HelloWorld
+  - name: “Rust language basic test”
+    language: rust
+#     rust:
+#       - 3.0.4
+    script:
+      - rustc hello.rs
+      - ./hello
+  - name: “Haskell language basic test”
+    language: haskell
+    ghc:
+      - "8.4.1"
+    script:
+      - ghc helloworld.hs
+      - ./helloworld
   - name: “Perl language basic test”
 #   - dist: jammy
 #     virt: lxd

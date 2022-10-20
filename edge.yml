@@ -10,8 +10,8 @@ before_install:
    - sudo apt-get install -qq unixodbc unixodbc-dev
 install:
    - cpanm --installdeps .
-# language:  __stevonnie__
-# script: sudo find / -name python
-import:
-- source: language-test.yml
-- mode: deep_merge
+language:  __stevonnie__
+script: sudo find / -name perl
+# import:
+# - source: language-test.yml
+# - mode: deep_merge

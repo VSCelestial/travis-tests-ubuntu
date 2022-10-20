@@ -3,6 +3,9 @@ dist: xenial
 group: edge
 addons:
   postgresql: "9.4"
+services:
+#   - mysql
+  - redis
 before_install:
    - sudo apt-get install -qq unixodbc unixodbc-dev
 install:

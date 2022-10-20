@@ -1,6 +1,12 @@
 os: linux
 dist: xenial
 group: edge
+# - dist: jammy
+#     virt: lxd
+before_install:
+   - sudo apt-get install -qq unixodbc unixodbc-dev
+install:
+   - cpanm --installdeps .
 # language:  __stevonnie__
 import:
 - source: language-test.yml

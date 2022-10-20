@@ -10,14 +10,15 @@ jobs:
   - name: “Python language basic test”
     language: python
     python:
-       - 3.8.13
+#        - 3.8.13
        - 2.7.15
     script:
-      - python3 -V
+#       - python3 -V
       - python source/python_hello.py  
   - name: “Java language basic test”
     language: java
     script:
+      - java -version
       - javac ./source/HelloWorld.java
       - cd source
       - java HelloWorld

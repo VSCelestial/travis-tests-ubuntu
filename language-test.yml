@@ -41,7 +41,7 @@ jobs:
     crystal:
       - latest
     script:
-      - crystal hello.cr
+      - gcrystal hello.cr
       - ./hello
   - name: “Perl language basic test”
     language: perl

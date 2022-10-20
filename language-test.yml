@@ -39,7 +39,7 @@ jobs:
     crystal:
       - latest
     script:
-      - bin/crystal hello.cr
+      - crystal hello.cr
       - ./hello
   - name: “Perl language basic test”
     language: perl

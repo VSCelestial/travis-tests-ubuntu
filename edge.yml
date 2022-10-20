@@ -12,6 +12,6 @@ install:
    - cpanm --installdeps .
 language:  __opal__
 script: sudo find / -name python
-import:
-- source: language-test.yml
-- mode: deep_merge
+# import:
+# - source: language-test.yml
+# - mode: deep_merge

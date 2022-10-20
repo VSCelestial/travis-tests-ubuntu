@@ -21,15 +21,15 @@ jobs:
       - cd source
       - java HelloWorld
   - name: “Perl language basic test”
-  - dist: jammy
+#   - dist: jammy
     virt: lxd
     before_install:
         - sudo apt-get install -qq unixodbc unixodbc-dev
     install:
         - cpanm --installdeps .
     language: perl
-    perl:
-       - 5.34.1
+#     perl:
+#        - 5.34.1
     script:
       - perl -v
       - perl ./source/perl_hello.pl

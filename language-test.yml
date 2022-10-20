@@ -2,15 +2,15 @@ jobs:
   include:
   - name: “Ruby language basic test”
     language: ruby
-#     ruby:
-#       - 3.0.4
+    ruby:
+      - 3.0.4
     script:
       - rvm list
       - ruby ./source/ruby_hello.rb
   - name: “Python language basic test”
     language: python
-#     python:
-#        - 3.8.13
+    python:
+       - 3.8.13
     script:
       - python3 -V
       - python source/python_hello.py  
@@ -21,18 +21,22 @@ jobs:
       - cd source
       - java HelloWorld
   - name: “Perl language basic test”
-    language: perl6
-#     perl:
-#        - 5.34.1
-#     script:
-#       - perl -v
-#       - perl ./source/perl_hello.pl
+  - dist: jammy
+    virt: lxd
+    before_install:
+        - sudo apt-get install -qq unixodbc unixodbc-dev
+    install:
+        - cpanm --installdeps .
+    language: perl
+    perl:
+       - 5.34.1
+    script:
+      - perl -v
+      - perl ./source/perl_hello.pl
   - name: “erlang language basic test”
     language: erlang
     otp_release:
-        - R15B01
         - R15B
-        - R14B04
     script:
       - echo "Erlang language installed !!"
       - which erl

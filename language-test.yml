@@ -35,12 +35,6 @@ jobs:
       - ghc helloworld.hs
       - ./helloworld
   - name: “Perl language basic test”
-#   - dist: jammy
-#     virt: lxd
-#     before_install:
-#         - sudo apt-get install -qq unixodbc unixodbc-dev
-#     install:
-#         - cpanm --installdeps .
     language: perl
     perl:
        - 5.34.1
@@ -50,7 +44,7 @@ jobs:
   - name: “erlang language basic test”
     language: erlang
     otp_release:
-        - R15B
+        - 23.0.2
     script:
       - echo "Erlang language installed !!"
       - which erl

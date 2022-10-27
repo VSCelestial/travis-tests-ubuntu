@@ -3,61 +3,9 @@ jobs:
   - name: “Ruby language basic test”
     language: ruby
     ruby:
-      - 3.0.4
+      - 2.3.8
+      - 2.4.5
+      - 2.5.3
     script:
       - rvm list
       - ruby ./source/ruby_hello.rb
-  - name: “Python language basic test”
-    language: python
-    python:
-#        - latest
-       - 3.8.13
-       - 3.7.13
-       - 2.7.15
-    script:
-#       - python3 -V
-      - python source/python_hello.py  
-  - name: “Java language basic test”
-    language: java
-    script:
-      - java -version
-      - javac ./source/HelloWorld.java
-      - cd source
-      - java HelloWorld
-  - name: “Rust language basic test”
-    language: rust
-#     rust:
-#       - 3.0.4
-    script:
-      - rustc hello.rs
-      - ./hello
-  - name: “Haskell language basic test”
-    language: haskell
-    ghc:
-      - "8.4.1"
-    script:
-      - ghc helloworld.hs
-      - ./helloworld
-  - name: “Crystal language basic test”
-    language: crystal
-    crystal:
-      - latest
-    script:
-      - gcrystal hello.cr
-      - ./hello
-  - name: “Perl language basic test”
-    language: perl
-    perl:
-       - 5.34.1
-    script:
-      - perl -v
-      - perl ./source/perl_hello.pl
-  - name: “erlang language basic test”
-    language: erlang
-    otp_release:
-        - 23.0.2
-    script:
-      - echo "Erlang language installed !!"
-      - which erl
-#       - erlc hello_world.erl
-

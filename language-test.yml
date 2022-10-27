@@ -7,13 +7,25 @@ jobs:
     script:
       - rvm list
       - ruby ./source/ruby_hello.rb
+  - name: “PHP language basic test”
+    language: php
+    php:
+      - 7.4.30
+    script:
+      - echo "php installed"
+  - name: “Node.js language basic test”
+    language: node_js
+    node_js:
+      - 16.16.0
+    script:
+      - echo "nodejs installed"
   - name: “Python language basic test”
     language: python
     python:
 #        - latest
        - 3.8.13
-       - 3.7.13
-       - 2.7.15
+#        - 3.7.13
+#        - 2.7.15
     script:
 #       - python3 -V
       - python source/python_hello.py  

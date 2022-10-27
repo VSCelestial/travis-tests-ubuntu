@@ -22,12 +22,8 @@ jobs:
   - name: “Python language basic test”
     language: python
     python:
-#        - latest
        - 3.8.13
-#        - 3.7.13
-#        - 2.7.15
     script:
-#       - python3 -V
       - python source/python_hello.py  
   - name: “Java language basic test”
     language: java
@@ -38,8 +34,6 @@ jobs:
       - java HelloWorld
   - name: “Rust language basic test”
     language: rust
-#     rust:
-#       - 3.0.4
     script:
       - rustc hello.rs
       - ./hello
@@ -64,5 +58,3 @@ jobs:
     script:
       - echo "Erlang language installed !!"
       - which erl
-#       - erlc hello_world.erl
-

@@ -10,7 +10,7 @@ before_install:
    - sudo apt-get install -qq unixodbc unixodbc-dev
 install:
    - cpanm --installdeps .
-language:  __Stevonnie__
+language:  __sardonyx__
 script: 
     - sudo find / -name go
     - go version

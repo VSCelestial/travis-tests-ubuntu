@@ -2,6 +2,9 @@ jobs:
   include: 
   - name: “Java language basic test”
     language: java
+    jdk: 
+     - openjdk8
+     - openjdk11
     script:
       - java -version
       - javac ./source/HelloWorld.java

@@ -3,7 +3,8 @@ jobs:
   - name: “Go language basic test”
     language: go
     go:
-       - 1.18.4
+#        - 1.18.4
+       - 1.11.1
     script:
       - echo "go installed"
   

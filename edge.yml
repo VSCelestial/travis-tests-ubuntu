@@ -13,11 +13,17 @@ install:
 language:  __stevonnie__
 script: 
     - sudo find / -name python
+    - python --version
     - sudo find / -name perl
+    - perl -v
     - sudo find / -name ruby
+    - rbenv -v
     - sudo find / -name golang
+    - go version
     - sudo find / -name php
+    - php --version
     - sudo find / -name java
+    - java -version
 # import:
 # - source: language-test.yml
 # - mode: deep_merge

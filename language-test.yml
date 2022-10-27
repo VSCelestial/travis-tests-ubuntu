@@ -43,8 +43,10 @@ jobs:
     crystal:
       - latest
     script:
-      - gcrystal hello.cr
-      - ./hello
+        - echo "crystal language"
+        - which crystal
+#       - gcrystal hello.cr
+#       - ./hello
   - name: “Perl language basic test”
     language: perl
     perl:

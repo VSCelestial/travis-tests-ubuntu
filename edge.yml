@@ -10,22 +10,22 @@ before_install:
    - sudo apt-get install -qq unixodbc unixodbc-dev
 install:
    - cpanm --installdeps .
-# language:  __sardonyx __
-# script: 
-#     - sudo find / -name python
-#     - python --version
-#     - sudo find / -name perl
-#     - perl -v
-#     - sudo find / -name ruby
-#     - rbenv -v
-#     - sudo find / -name go
-#     - go version
-#     - sudo find / -name php
-#     - php -version
-#     - sudo find / -name java
-#     - java -version
-#     - sudo find / -name node
-#     - nodejs -v
-import:
-- source: language-test.yml
-- mode: deep_merge
+language:  __sardonyx __
+script: 
+    - sudo find / -name python
+    - python --version
+    - sudo find / -name perl
+    - perl -v
+    - sudo find / -name ruby
+    - rbenv -v
+    - sudo find / -name go
+    - go version
+    - sudo find / -name php
+    - php -version
+    - sudo find / -name java
+    - java -version
+    - sudo find / -name node
+    - node --version
+# import:
+# - source: language-test.yml
+# - mode: deep_merge

@@ -3,8 +3,7 @@ jobs:
   - name: “Ruby language basic test”
     language: ruby
     ruby:
-      - 2.4.5
-#       - 2.5.3
+      - 2.5.3
     script:
       - rvm list
       - ruby ./source/ruby_hello.rb

@@ -25,7 +25,7 @@ script:
     - sudo find / -name java
     - java -version
     - sudo find / -name node
-    - node.js -v
+    - nodejs -v
 # import:
 # - source: language-test.yml
 # - mode: deep_merge

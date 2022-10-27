@@ -50,15 +50,6 @@ jobs:
     script:
       - ghc helloworld.hs
       - ./helloworld
-  - name: “Crystal language basic test”
-    language: crystal
-    crystal:
-      - latest
-    script:
-        - echo "crystal language"
-        - which crystal
-#       - gcrystal hello.cr
-#       - ./hello
   - name: “Perl language basic test”
     language: perl
     perl:

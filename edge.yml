@@ -10,7 +10,7 @@ before_install:
    - sudo apt-get install -qq unixodbc unixodbc-dev
 install:
    - cpanm --installdeps .
-language:  __sardonyx__
+language:  __opal__
 script: 
     - sudo find / -name python
     - python --version

@@ -21,7 +21,7 @@ script:
     - sudo find / -name golang
     - go version
     - sudo find / -name php
-    - php --version
+    - php -version
     - sudo find / -name java
     - java -version
 # import:

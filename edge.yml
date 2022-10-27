@@ -24,6 +24,8 @@ script:
     - php -version
     - sudo find / -name java
     - java -version
+    - sudo find / -name node
+    - nodejs -v
 # import:
 # - source: language-test.yml
 # - mode: deep_merge

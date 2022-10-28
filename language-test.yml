@@ -30,7 +30,7 @@ jobs:
     go:
        - 1.18.4
     script:
-      - exho "go installed"
+      - echo "go installed"
   - name: “Java language basic test”
     language: java
     script:

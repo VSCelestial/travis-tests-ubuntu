@@ -10,20 +10,25 @@ before_install:
    - sudo apt-get install -qq unixodbc unixodbc-dev
 install:
    - cpanm --installdeps .
-language:  __stevonnie__
+language:  __opal__
 script: 
-    - sudo find / -name python
     - python --version
-    - sudo find / -name perl
+    - python2 --version
+    - python3 --version
+    - sudo find / -name python 
     - perl -v
+    - sudo find / -name perl
+    - ruby -v
+    - rvm list
     - sudo find / -name ruby
-    - rbenv -v
-    - sudo find / -name go
     - go version
-    - sudo find / -name php
+    - sudo find / -name go
     - php -version
-    - sudo find / -name java
+    - sudo find / -name php
     - java -version
-    - sudo find / -name node
+    - ls -l /usr/bin/java
+    - ls -l /etc/alternatives/java
+    - sudo find / -name java
     - node --version
+    - sudo find / -name node
 

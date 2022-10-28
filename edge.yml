@@ -12,23 +12,6 @@ install:
    - cpanm --installdeps .
 language:  __opal__
 script: 
-    - python --version
-    - python2 --version
-    - python3 --version
-    - sudo find / -name python 
-    - perl -v
-    - sudo find / -name perl
-    - ruby -v
-    - rvm list
-    - sudo find / -name ruby
     - go version
     - sudo find / -name go
-    - php -version
-    - sudo find / -name php
-    - java -version
-    - ls -l /usr/bin/java
-    - ls -l /etc/alternatives/java
-    - sudo find / -name java
-    - node --version
-    - sudo find / -name node
 

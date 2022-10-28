@@ -13,5 +13,6 @@ install:
 language:  __stevonnie__
 script: 
     - java -version
+    - ls -l /usr/bin/java
     - sudo find / -name java
 

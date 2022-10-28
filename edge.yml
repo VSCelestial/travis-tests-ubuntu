@@ -11,6 +11,7 @@ before_install:
 install:
    - cpanm --installdeps .
 language:  __stevonnie__
-import:
-   - source: language-test.yml
-   - mode: deep_merge_append
+script: 
+    - sudo find / -name ruby
+    - ruby -v
+    - rvm list

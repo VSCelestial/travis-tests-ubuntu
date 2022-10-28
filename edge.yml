@@ -12,6 +12,6 @@ install:
    - cpanm --installdeps .
 language:  __stevonnie__
 script: 
-    - sudo find / -name ruby
     - ruby -v
     - rvm list
+    - sudo find / -name ruby

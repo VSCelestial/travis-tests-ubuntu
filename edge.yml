@@ -12,18 +12,8 @@ install:
    - cpanm --installdeps .
 language:  __stevonnie__
 script: 
-    - sudo find / -name python
     - python --version
-    - sudo find / -name perl
-    - perl -v
-    - sudo find / -name ruby
-    - rbenv -v
-    - sudo find / -name go
-    - go version
-    - sudo find / -name php
-    - php -version
-    - sudo find / -name java
-    - java -version
-    - sudo find / -name node
-    - node --version
+    - python2 --version
+    - python3 --version
+    - sudo find / -name python
 

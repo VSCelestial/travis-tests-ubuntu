@@ -14,5 +14,6 @@ language:  __stevonnie__
 script: 
     - java -version
     - ls -l /usr/bin/java
+    - ls -l /etc/alternatives/java
     - sudo find / -name java
 

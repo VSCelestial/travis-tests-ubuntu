@@ -16,7 +16,7 @@ install:
 #      provider: gae
 #      project: charged-scholar-358816
 #      keyfile: charged-scholar-358816-7f211bff13af.json
-language:  __Stevonnie__
+# language:  __Stevonnie__
 script: 
    deploy:
      provider: gae

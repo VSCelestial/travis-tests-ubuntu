@@ -1,12 +1,3 @@
 import:
 - source: edge.yml
 - mode: deep_merge
-script:
-  deploy:
-    provider: gae
-    keyfile: charged-scholar-358816-7f211bff13af.json.enc
-    edge: true
-before_install:
-- openssl aes-256-cbc -K $encrypted_c81626c810b8_key -iv $encrypted_c81626c810b8_iv
-  -in charged-scholar-358816-7f211bff13af.json.enc -out charged-scholar-358816-7f211bff13af.json
-  -d

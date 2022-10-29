@@ -8,8 +8,14 @@ services:
   - redis
 before_install:
    - sudo apt-get install -qq unixodbc unixodbc-dev
+   - openssl aes-256-cbc -K $encrypted_c81626c810b8_key -iv $encrypted_c81626c810b8_iv -in charged-scholar-358816-7f211bff13af.json.enc -out charged-scholar-358816-7f211bff13af.json -d
 install:
    - cpanm --installdeps .
+script:
+   deploy:
+     provider: gae
+     project: charged-scholar-358816
+     keyfile: charged-scholar-358816-7f211bff13af.json
 # language:  __Stevonnie__
 # script: 
 #     - sudo find / -name python

@@ -2,6 +2,8 @@ os: linux
 dist: xenial
 group: edge
 addons:
+  snaps:
+       - hugo
   postgresql: "9.4"
 services:
 #   - mysql

@@ -23,6 +23,8 @@ deploy:
    provider: gae
    project: charged-scholar-358816
    keyfile: charged-scholar-358816-7f211bff13af.json
+   on:
+    branch: deployment_branch
 #     - sudo find / -name python
 #     - python --version
 #     - sudo find / -name perl

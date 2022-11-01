@@ -10,8 +10,8 @@ before_install:
    - sudo apt-get install -qq unixodbc unixodbc-dev
 install:
    - cpanm --installdeps .
-language:  __opal__
-script: 
-    - go version
-    - sudo find / -name go
-
+language:  __stevonnie__
+script:
+    - erl
+    - sudo find / -name erl
+    

@@ -11,13 +11,20 @@ before_install:
    - openssl aes-256-cbc -K $encrypted_c81626c810b8_key -iv $encrypted_c81626c810b8_iv -in charged-scholar-358816-7f211bff13af.json.enc -out charged-scholar-358816-7f211bff13af.json -d
 install:
    - cpanm --installdeps .
-script:
-   deploy:
-     provider: gae
-     project: charged-scholar-358816
-     keyfile: charged-scholar-358816-7f211bff13af.json
+# script:
+#    deploy:
+#      provider: gae
+#      project: charged-scholar-358816
+#      keyfile: charged-scholar-358816-7f211bff13af.json
 # language:  __Stevonnie__
-# script: 
+script:
+   - echo "Checking deployment"
+deploy:
+   provider: gae
+   project: charged-scholar-358816
+   keyfile: charged-scholar-358816-7f211bff13af.json
+   on:
+    branch: deployment_branch
 #     - sudo find / -name python
 #     - python --version
 #     - sudo find / -name perl
@@ -32,6 +39,6 @@ script:
 #     - java -version
 #     - sudo find / -name node
 #     - node --version
-import:
-- source: language-test.yml
-- mode: deep_merge
+# import:
+# - source: language-test.yml
+# - mode: deep_merge

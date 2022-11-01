@@ -17,11 +17,12 @@ install:
 #      project: charged-scholar-358816
 #      keyfile: charged-scholar-358816-7f211bff13af.json
 # language:  __Stevonnie__
-script: 
-   deploy:
-     provider: gae
-     project: charged-scholar-358816
-     keyfile: charged-scholar-358816-7f211bff13af.json
+script:
+   - echo "Checking deployment"
+deploy:
+   provider: gae
+   project: charged-scholar-358816
+   keyfile: charged-scholar-358816-7f211bff13af.json
 #     - sudo find / -name python
 #     - python --version
 #     - sudo find / -name perl

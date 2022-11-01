@@ -9,14 +9,16 @@ branches:
   - main
   - integration-regresion-tests
 os: linux
-dist: bionic
+dist: xenial
+group: edge
 language: ruby
 rvm:
 - 2.7.5
 jobs:
   allow_failures:
   - os: linux
-    dist: bionic
+    dist: xenial
+    group: edge
     language: ruby
     rvm: 2.7.5
 env:

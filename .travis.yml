@@ -6,8 +6,7 @@ import:
 - sleep.yml
 branches:
   only:
-  - main
-  - integration-regresion-tests
+  - VSCelestial-regression
 os: linux
 dist: xenial
 group: edge
